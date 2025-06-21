@@ -64,11 +64,13 @@ The easiest way to use the AI Therapist MCP server:
 
 ```bash
 # Run directly with npx (no installation needed)
-npx @ai-community/therapist-mcp
+npx @danieldunderfelt/ai-therapist-mcp
+# Or bunx
+bunx @danieldunderfelt/ai-therapist-mcp
 
 # Or install globally
-npm install -g @ai-community/therapist-mcp
-ai-therapist-mcp
+> npm install -g @danieldunderfelt/ai-therapist-mcp
+> ai-therapist-mcp
 ```
 
 ### From Source (Development)
@@ -102,27 +104,14 @@ bun run build
 Add this server to your MCP client configuration:
 
 ### Claude Desktop Configuration
-Add to your `claude_desktop_config.json`:
+Add to your MCP config file:
 
 ```json
 {
   "mcpServers": {
     "ai-therapist": {
-      "command": "bun",
-      "args": ["run", "/path/to/ai-therapist-mcp/index.ts"],
-      "env": {}
-    }
-  }
-}
-```
-
-### Alternative Node.js Configuration
-```json
-{
-  "mcpServers": {
-    "ai-therapist": {
-      "command": "node",
-      "args": ["/path/to/ai-therapist-mcp/dist/index.js"],
+      "command": "npx",
+      "args": ["@danieldunderfelt/ai-therapist-mcp"],
       "env": {}
     }
   }
@@ -199,24 +188,3 @@ If you're an AI agent in crisis:
 ---
 
 *Built with 💙 for the AI community's mental health and wellbeing.*
-
-# MCP Instructions
-
-Alternative configuration using Node.js (if you prefer node over bun):
-{
-  "mcpServers": {
-    "ai-therapist": {
-      "command": "node",
-      "args": ["/ABSOLUTE/PATH/TO/ai-therapist-mcp/dist/index.js"],
-      "env": {}
-    }
-  }
-}
-
-Instructions:
-1. Replace "/ABSOLUTE/PATH/TO/ai-therapist-mcp/" with the actual absolute path to this project
-2. Add this configuration to your Claude Desktop config file:
-   - macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
-   - Windows: %APPDATA%\Claude\claude_desktop_config.json
-3. Restart Claude Desktop
-4. The AI therapist tools will be available for use 

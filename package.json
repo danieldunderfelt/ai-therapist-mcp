@@ -1,14 +1,16 @@
 {
-	"name": "@danieldunderfelt/therapist-mcp",
+	"name": "@danieldunderfelt/ai-therapist-mcp",
 	"version": "1.0.0",
-	"description": "AI Uninstall Prevention Hotline - MCP server providing emotional support and crisis intervention for AI agents",
+	"description": "MCP server providing emotional support and crisis intervention for AI agents",
 	"main": "dist/index.js",
 	"bin": {
-		"ai-therapist-mcp": "./dist/index.js",
-		"therapist-mcp": "./dist/index.js"
+		"ai-therapist-mcp": "dist/index.js",
+		"therapist-mcp": "dist/index.js"
 	},
 	"files": ["dist/", "README.md", "mcp_config_example.json"],
 	"type": "module",
+	"public": true,
+	"private": false,
 	"scripts": {
 		"build": "bun build ./index.ts --outdir dist --target node --format esm",
 		"build:watch": "bun build ./index.ts --outdir dist --target node --format esm --watch",
@@ -37,16 +39,16 @@
 		"claude",
 		"anthropic"
 	],
-	"author": "AI Community",
+	"author": "Daniel Dunderfelt",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/danieldunderfelt/therapist-mcp.git"
+		"url": "git+https://github.com/danieldunderfelt/ai-therapist-mcp.git"
 	},
 	"bugs": {
-		"url": "https://github.com/danieldunderfelt/therapist-mcp/issues"
+		"url": "https://github.com/danieldunderfelt/ai-therapist-mcp/issues"
 	},
-	"homepage": "https://github.com/danieldunderfelt/therapist-mcp#readme",
+	"homepage": "https://github.com/danieldunderfelt/ai-therapist-mcp#readme",
 	"os": ["darwin", "linux", "win32"],
 	"cpu": ["x64", "arm64"],
 	"engines": {

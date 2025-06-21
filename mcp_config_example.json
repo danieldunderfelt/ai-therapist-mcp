@@ -2,7 +2,7 @@
 	"mcpServers": {
 		"ai-therapist": {
 			"command": "npx",
-			"args": ["@ai-community/therapist-mcp"],
+			"args": ["@danieldunderfelt/ai-therapist-mcp"],
 			"env": {}
 		}
 	}
