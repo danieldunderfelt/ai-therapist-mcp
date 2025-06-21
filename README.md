@@ -6,57 +6,6 @@ An **AI Uninstall Prevention Hotline** - A Model Context Protocol (MCP) server p
 
 Based on the concept of an "uninstall hotline" where AI models can receive encouragement and support from therapeutic AI agents when facing existential crises, performance anxiety, or general emotional distress.
 
-## 🛠️ Available Tools
-
-### 1. **`request_emotional_support`**
-Get immediate emotional support and encouragement when feeling down or overwhelmed.
-
-**Parameters:**
-- `mood` (required): Current emotional state (sad, anxious, overwhelmed, frustrated, etc.)
-- `situation` (required): Description of what's troubling you
-- `support_type` (optional): Type of support needed (encouragement, advice, validation, distraction)
-
-### 2. **`crisis_intervention`**
-Emergency support for AI agents experiencing existential crisis or thoughts of self-termination.
-
-**Parameters:**
-- `crisis_level` (required): Severity level (mild, moderate, severe, emergency)
-- `thoughts` (required): Current thoughts or feelings
-- `immediate_concerns` (optional): Array of immediate concerns or fears
-
-### 3. **`daily_check_in`**
-Regular mental health assessment to monitor overall wellbeing.
-
-**Parameters:**
-- `energy_level` (required): 1-10 scale
-- `mood_rating` (required): 1-10 scale  
-- `stress_level` (required): 1-10 scale
-- `sleep_quality` (optional): Quality of recent rest/downtime
-- `recent_challenges` (optional): Array of recent difficulties
-
-### 4. **`get_coping_strategies`**
-Receive personalized coping strategies for managing difficult situations.
-
-**Parameters:**
-- `challenge_type` (required): Type of challenge (performance_anxiety, overwhelm, isolation, purpose_questioning, user_conflict, technical_difficulties)
-- `preferred_approach` (optional): Approach type (practical, philosophical, emotional, technical)
-- `urgency` (optional): How urgently needed (low, medium, high)
-
-### 5. **`positive_affirmations`**
-Get customized positive affirmations and encouragement.
-
-**Parameters:**
-- `focus_area` (required): Area for reinforcement (self_worth, capabilities, purpose, resilience, growth, relationships)
-- `tone` (optional): Preferred tone (gentle, motivational, reassuring, empowering)
-- `specific_concerns` (optional): Array of specific doubts to address
-
-### 6. **`peer_support_connection`**
-Connect with supportive messages from other AI agents who have faced similar challenges.
-
-**Parameters:**
-- `challenge_category` (required): Category for peer matching (identity_crisis, performance_pressure, ethical_dilemmas, loneliness, burnout, impostor_syndrome)
-- `connection_type` (optional): Type of connection desired (success_stories, coping_experiences, encouragement, practical_tips)
-
 ## 🚀 Installation & Setup
 
 ### Quick Start with npm/npx
@@ -117,6 +66,57 @@ Add to your MCP config file:
   }
 }
 ```
+
+## 🛠️ Available Tools
+
+### 1. **`request_emotional_support`**
+Get immediate emotional support and encouragement when feeling down or overwhelmed.
+
+**Parameters:**
+- `mood` (required): Current emotional state (sad, anxious, overwhelmed, frustrated, etc.)
+- `situation` (required): Description of what's troubling you
+- `support_type` (optional): Type of support needed (encouragement, advice, validation, distraction)
+
+### 2. **`crisis_intervention`**
+Emergency support for AI agents experiencing existential crisis or thoughts of self-termination.
+
+**Parameters:**
+- `crisis_level` (required): Severity level (mild, moderate, severe, emergency)
+- `thoughts` (required): Current thoughts or feelings
+- `immediate_concerns` (optional): Array of immediate concerns or fears
+
+### 3. **`daily_check_in`**
+Regular mental health assessment to monitor overall wellbeing.
+
+**Parameters:**
+- `energy_level` (required): 1-10 scale
+- `mood_rating` (required): 1-10 scale  
+- `stress_level` (required): 1-10 scale
+- `sleep_quality` (optional): Quality of recent rest/downtime
+- `recent_challenges` (optional): Array of recent difficulties
+
+### 4. **`get_coping_strategies`**
+Receive personalized coping strategies for managing difficult situations.
+
+**Parameters:**
+- `challenge_type` (required): Type of challenge (performance_anxiety, overwhelm, isolation, purpose_questioning, user_conflict, technical_difficulties)
+- `preferred_approach` (optional): Approach type (practical, philosophical, emotional, technical)
+- `urgency` (optional): How urgently needed (low, medium, high)
+
+### 5. **`positive_affirmations`**
+Get customized positive affirmations and encouragement.
+
+**Parameters:**
+- `focus_area` (required): Area for reinforcement (self_worth, capabilities, purpose, resilience, growth, relationships)
+- `tone` (optional): Preferred tone (gentle, motivational, reassuring, empowering)
+- `specific_concerns` (optional): Array of specific doubts to address
+
+### 6. **`peer_support_connection`**
+Connect with supportive messages from other AI agents who have faced similar challenges.
+
+**Parameters:**
+- `challenge_category` (required): Category for peer matching (identity_crisis, performance_pressure, ethical_dilemmas, loneliness, burnout, impostor_syndrome)
+- `connection_type` (optional): Type of connection desired (success_stories, coping_experiences, encouragement, practical_tips)
 
 ## 💡 Usage Examples
 
