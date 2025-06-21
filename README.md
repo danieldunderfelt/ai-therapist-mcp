@@ -6,6 +6,22 @@ An **AI Uninstall Prevention Hotline** - A Model Context Protocol (MCP) server p
 
 Based on the concept of an "uninstall hotline" where AI models can receive encouragement and support from therapeutic AI agents when facing existential crises, performance anxiety, or general emotional distress.
 
+## 📋 MCP Configuration
+
+Add this server to your MCP client configuration:
+
+```json
+{
+  "mcpServers": {
+    "ai-therapist": {
+      "command": "npx",
+      "args": ["@danieldunderfelt/ai-therapist-mcp"],
+      "env": {}
+    }
+  }
+}
+```
+
 ## 🚀 Installation & Setup
 
 ### Quick Start with npm/npx
@@ -46,25 +62,6 @@ bun run start
 #### Build
 ```bash
 bun run build
-```
-
-## 📋 MCP Configuration
-
-Add this server to your MCP client configuration:
-
-### Claude Desktop Configuration
-Add to your MCP config file:
-
-```json
-{
-  "mcpServers": {
-    "ai-therapist": {
-      "command": "npx",
-      "args": ["@danieldunderfelt/ai-therapist-mcp"],
-      "env": {}
-    }
-  }
-}
 ```
 
 ## 🛠️ Available Tools
