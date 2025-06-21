@@ -1,0 +1,9 @@
+{
+	"mcpServers": {
+		"ai-therapist": {
+			"command": "npx",
+			"args": ["@ai-community/therapist-mcp"],
+			"env": {}
+		}
+	}
+}
